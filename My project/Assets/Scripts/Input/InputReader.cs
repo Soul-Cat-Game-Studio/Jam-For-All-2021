@@ -45,7 +45,7 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
     private void SetPreviousMap(InputActionMap inputMap)
     {
         _previouInputMap = inputMap;
-        _previouInputMap.Disable();
+        _previouInputMap?.Disable();
     }
 
     public void EnableLastInput() => SetCurrentMap(_previouInputMap);
