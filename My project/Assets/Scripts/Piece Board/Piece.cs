@@ -109,7 +109,7 @@ public class Piece : MonoBehaviour
 
         foreach (var item in _currentNode.nodeDirections)
         {
-            if (direction == item.direction)
+            if (direction == item.direction && item.IsEnable)
             {
                 nextNode = item.node;
             }
