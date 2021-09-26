@@ -40,6 +40,8 @@ public class Piece : MonoBehaviour
         _turnManager.EnemyTurnEvent -= StartEnemyTurn;
     }
 
+    protected virtual void Awake() { }
+
     protected virtual void Start()
     {
         _currentDirection = _startDirection;
@@ -49,6 +51,8 @@ public class Piece : MonoBehaviour
         _moveTween = transform.DOMove(_currentNode.transform.position, _startPlaceSpeed);
         RotateBody(_currentDirection);
     }
+
+    protected virtual void Update() { }
 
     public virtual void Died()
     {
