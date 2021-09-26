@@ -28,7 +28,6 @@ public class Piece : MonoBehaviour
     protected Tween _moveTween;
     protected Tween _rotTween;
 
-
     protected virtual void OnEnable()
     {
         _turnManager.PlayerTurnEvent += StartPlayerTurn;
@@ -69,10 +68,10 @@ public class Piece : MonoBehaviour
     public virtual void StartPlayerTurn() { }
     public virtual void StartEnemyTurn() { }
 
-    protected virtual void Move(Direction direction)
+    protected virtual bool Move(Direction direction)
     {
         Node nextNode = NextNodeDirection(direction);
-        if (nextNode == null) return;
+        if (nextNode == null) return false;
 
         _currentNode.ExitPiece(this, pieceType);
         _moveTween = transform.DOMove(nextNode.transform.position, walkSpeed);
@@ -81,7 +80,9 @@ public class Piece : MonoBehaviour
         _currentNode = nextNode;
         _currentDirection = direction;
 
-        _currentNode.EnterPiece(this, pieceType);    
+        _currentNode.EnterPiece(this, pieceType);
+
+        return true;
     }
 
     protected void RotateBody(Direction direction)

@@ -24,9 +24,13 @@ public class Pawn : Piece
         _input.MoveEvent += HandlerMovement;
     }
 
-    protected override void Move(Direction direction)
+    protected override bool Move(Direction direction)
     {
-        base.Move(direction);
+        if (!base.Move(direction)) return false;
+
+        _input.MoveEvent -= HandlerMovement;
+        _turnManager.NextTurn();
+
 
         if (_currentNode.enemies.Count > 0)
         {
@@ -37,6 +41,8 @@ public class Pawn : Piece
 
             _currentNode.enemies.Clear();
         }
+
+        return true;
     }
 
     public void HandlerMovement(Vector2 pos)
@@ -45,10 +51,5 @@ public class Pawn : Piece
         else if (pos.x == -1) Move(Direction.Left);
         else if (pos.y == 1) Move(Direction.Foward);
         else if (pos.y == -1) Move(Direction.Backwarrd);
-        else return;
-
-        _input.MoveEvent -= HandlerMovement;
-
-        _turnManager.NextTurn();
     }
 }

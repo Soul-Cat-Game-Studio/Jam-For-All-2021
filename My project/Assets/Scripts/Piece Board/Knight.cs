@@ -10,9 +10,12 @@ public class Knight : Piece
 
         if (nextNode != null && nextNode.player != null)
         {
-            nextNode.player.Died();
             Move(_currentDirection);
         }
+
+        if (_currentNode.player) _currentNode.player.Died();
     }
+    
+
 }
 
