@@ -9,6 +9,6 @@ public enum Direction
     Foward,
     Left,
     Rigth,
-    Backwarrd
+    Backward
 
 }
