@@ -8,6 +8,9 @@ public class NodeDirection
 
     public Direction direction;
 
+    [Range(0.0f, 360.0f)]
+    public float rotationAngle;
+
     public bool IsEnable { get => _isEnable; set => _isEnable = value; }
     [SerializeField] private bool _isEnable = true;
 
