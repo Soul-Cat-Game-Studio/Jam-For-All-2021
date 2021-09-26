@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538707652068934167}
   m_LocalRotation: {x: 0, y: 0.7660445, z: -0, w: -0.6427876}
-  m_LocalPosition: {x: 0.0037209706, y: 0, z: -0.004388809}
+  m_LocalPosition: {x: 0.0037209706, y: 7, z: -0.004388809}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   _turnManager: {fileID: 11400000, guid: bbd9bef1fa6dd874ea67f3c284d47ef6, type: 2}
   _startNode: {fileID: 0}
   _startDirection: 0
-  _startPlaceSpeed: 2
+  _startPlaceSpeed: 1
   walkSpeed: 0.5
   turnSpeed: 0.5
   pieceType: 0
