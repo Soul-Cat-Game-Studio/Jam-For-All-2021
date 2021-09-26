@@ -16,4 +16,20 @@ MonoBehaviour:
   index: 0
   Operations:
   - unloadScenes: []
-    loadScenes: []
+    loadScenes:
+    - scene:
+        name: Menu
+        path: Assets/Scenes/Menu.unity
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 1"
+        path: "Assets/Scenes/Floresta/TTRL 1-3/N\xEDvel 1.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 2"
+        path: "Assets/Scenes/Floresta/TTRL 1-3/N\xEDvel 2.unity"
+      sceneLoadType: 0
