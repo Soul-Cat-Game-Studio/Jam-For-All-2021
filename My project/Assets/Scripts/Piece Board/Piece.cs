@@ -107,7 +107,7 @@ public class Piece : MonoBehaviour
     {
         Node nextNode = null;
 
-        if (_currentNode.nodeDirections == null) return;
+        if (_currentNode.nodeDirections == null) return null;
 
         foreach (var item in _currentNode.nodeDirections)
         {
