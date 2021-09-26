@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3595242576595988421}
   - component: {fileID: 1585312539003968271}
   - component: {fileID: 126590050966128521}
+  - component: {fileID: 8606140142632612818}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -101,3 +102,17 @@ MonoBehaviour:
   walkSpeed: 1
   turnSpeed: 1
   pieceType: 1
+--- !u!136 &8606140142632612818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936983102883003098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.48741674
+  m_Height: 1.8313388
+  m_Direction: 1
+  m_Center: {x: 0.03477192, y: 0.9156694, z: -0.06967831}

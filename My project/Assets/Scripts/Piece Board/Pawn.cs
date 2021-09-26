@@ -24,6 +24,12 @@ public class Pawn : Piece
         _input.MoveEvent += HandlerMovement;
     }
 
+    public override void Died()
+    {
+        base.Died();
+        _input.MoveEvent -= HandlerMovement;
+    }
+
     protected override bool Move(Direction direction)
     {
         if (!base.Move(direction)) return false;
