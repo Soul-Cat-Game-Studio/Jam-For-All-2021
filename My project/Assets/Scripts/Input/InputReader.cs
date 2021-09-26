@@ -9,6 +9,7 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
 {
     // --------------EVENTS --------------
     public event UnityAction<Vector2> MoveEvent = delegate { };
+    public event UnityAction PauseEvent = delegate { };
 
     // --------------INPUTS --------------
 
@@ -57,5 +58,15 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
     public void OnMovement(InputAction.CallbackContext context)
     {
         MoveEvent.Invoke(context.ReadValue<Vector2>());
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        switch (context.phase)
+        {
+            case InputActionPhase.Performed:
+                PauseEvent.Invoke();
+                break;
+        }
     }
 }

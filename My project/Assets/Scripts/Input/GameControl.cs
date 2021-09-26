@@ -25,6 +25,14 @@ public class @GameControl : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""38d2179b-b013-4a7f-9b67-c027cbdaf2bc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -84,7 +92,7 @@ public class @GameControl : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""Arrrow"",
+                    ""name"": ""Arrow"",
                     ""id"": ""21d60776-2fe3-4247-a4cf-f627f7d0e89c"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -137,6 +145,83 @@ public class @GameControl : IInputActionCollection, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Stick"",
+                    ""id"": ""1d818941-71ec-4b1a-a86a-0289ef28726e"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""49c32c94-e61f-4f0c-8e11-c2c7fe299464"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""fba07f53-9865-4cfc-bcbb-189670268fbd"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""91a6a6ab-4ea3-471b-95b1-033a1d7783ca"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2f56120c-a47d-4053-8d79-257d4adf8e07"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""51ecda16-d779-4ea5-9d72-dbcb78d69500"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""656a30c5-eb33-4455-96b1-7526ead78c89"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -146,6 +231,7 @@ public class @GameControl : IInputActionCollection, IDisposable
         // InGame
         m_InGame = asset.FindActionMap("InGame", throwIfNotFound: true);
         m_InGame_Movement = m_InGame.FindAction("Movement", throwIfNotFound: true);
+        m_InGame_Pause = m_InGame.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -196,11 +282,13 @@ public class @GameControl : IInputActionCollection, IDisposable
     private readonly InputActionMap m_InGame;
     private IInGameActions m_InGameActionsCallbackInterface;
     private readonly InputAction m_InGame_Movement;
+    private readonly InputAction m_InGame_Pause;
     public struct InGameActions
     {
         private @GameControl m_Wrapper;
         public InGameActions(@GameControl wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_InGame_Movement;
+        public InputAction @Pause => m_Wrapper.m_InGame_Pause;
         public InputActionMap Get() { return m_Wrapper.m_InGame; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -213,6 +301,9 @@ public class @GameControl : IInputActionCollection, IDisposable
                 @Movement.started -= m_Wrapper.m_InGameActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_InGameActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_InGameActionsCallbackInterface.OnMovement;
+                @Pause.started -= m_Wrapper.m_InGameActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_InGameActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_InGameActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_InGameActionsCallbackInterface = instance;
             if (instance != null)
@@ -220,6 +311,9 @@ public class @GameControl : IInputActionCollection, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -227,5 +321,6 @@ public class @GameControl : IInputActionCollection, IDisposable
     public interface IInGameActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
