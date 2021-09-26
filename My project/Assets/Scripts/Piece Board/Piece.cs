@@ -91,29 +91,16 @@ public class Piece : MonoBehaviour
 
     protected void RotateBody(Direction direction)
     {
-        var rot = Vector3.zero;
+        NodeDirection nodeDirection = null;
 
-        switch (direction)
+        foreach (var item in _currentNode.nodeDirections)
         {
-            case Direction.Foward:
-                rot = new Vector3(0, 0, 0);
-                _rotTween = transform.DOLocalRotate(rot, turnSpeed);
-                break;
-
-            case Direction.Rigth:
-                rot = new Vector3(0, 90, 0);
-                _rotTween = transform.DOLocalRotate(rot, turnSpeed);
-                break;
-
-            case Direction.Backward:
-                rot = new Vector3(0, 180, 0);
-                _rotTween = transform.DOLocalRotate(rot, turnSpeed);
-                break;
-            case Direction.Left:
-                rot = new Vector3(0, 260, 0);
-                _rotTween = transform.DOLocalRotate(rot, turnSpeed);
-                break;
+            if (item.direction == direction) nodeDirection = item;
         }
+
+        var rot = new Vector3(0, nodeDirection.rotationAngle, 0);
+
+        _rotTween = transform.DOLocalRotate(rot, turnSpeed);
     }
 
     protected Node NextNodeDirection(Direction direction)
