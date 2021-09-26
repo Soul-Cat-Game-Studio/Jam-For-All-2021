@@ -9,7 +9,7 @@ public class Horse : Piece
     private int nextPoint;
 
 
-    public override void StartEnemyTurn()
+    public override void StartPlayerTurn()
     {
 
 

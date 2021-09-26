@@ -15,11 +15,28 @@ public class Node : MonoBehaviour
         {
             case PieceType.Player:
                 player = piece;
+                Verify();
                 break;
 
             case PieceType.Enemy:
                 enemies.Add(piece);
                 break;
+        }
+    }
+
+    private void Verify()
+    {
+        foreach (var item in nodeDirections)
+        {
+            item.Verify();
+        }
+    }
+
+    private void ExitNode()
+    {
+        foreach (var item in nodeDirections)
+        {
+            item.ExitNode();
         }
     }
 
@@ -29,6 +46,7 @@ public class Node : MonoBehaviour
         {
             case PieceType.Player:
                 player = null;
+                ExitNode();
                 break;
 
             case PieceType.Enemy:
@@ -44,7 +62,7 @@ public class Node : MonoBehaviour
 
         foreach (var item in nodeDirections)
         {
-            if (item.node == null) continue;
+            if (item.node == null || !item.IsEnable) continue;
             Gizmos.DrawLine(transform.position, item.node.transform.position);
         }
     }
