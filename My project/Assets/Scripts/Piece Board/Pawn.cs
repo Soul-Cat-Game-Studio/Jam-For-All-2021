@@ -56,6 +56,6 @@ public class Pawn : Piece
         if (pos.x == 1) Move(Direction.Rigth);
         else if (pos.x == -1) Move(Direction.Left);
         else if (pos.y == 1) Move(Direction.Foward);
-        else if (pos.y == -1) Move(Direction.Backwarrd);
+        else if (pos.y == -1) Move(Direction.Backward);
     }
 }

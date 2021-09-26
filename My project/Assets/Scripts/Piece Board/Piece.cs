@@ -105,7 +105,7 @@ public class Piece : MonoBehaviour
                 _rotTween = transform.DOLocalRotate(rot, turnSpeed);
                 break;
 
-            case Direction.Backwarrd:
+            case Direction.Backward:
                 rot = new Vector3(0, 180, 0);
                 _rotTween = transform.DOLocalRotate(rot, turnSpeed);
                 break;
