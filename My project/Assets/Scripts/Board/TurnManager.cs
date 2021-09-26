@@ -8,15 +8,18 @@ using System;
 [CreateAssetMenu(fileName = "Turn Manager", menuName = "Board/TurnManager")]
 public class TurnManager : ScriptableObject
 {
-    [SerializeField] private float turnTime;
+    [SerializeField] private float _enemyTurnTime;
+    [SerializeField] private float _playerTurnTime;
     public event UnityAction PlayerTurnEvent = delegate { };
     public event UnityAction EnemyTurnEvent = delegate { };
 
     public async void NextTurn()
     {
+        await UniTask.Delay(TimeSpan.FromSeconds(_enemyTurnTime), ignoreTimeScale: false);
+
         EnemyTurnEvent.Invoke();
 
-        await UniTask.Delay(TimeSpan.FromSeconds(turnTime), ignoreTimeScale: false);
+        await UniTask.Delay(TimeSpan.FromSeconds(_playerTurnTime), ignoreTimeScale: false);
 
         PlayerTurnEvent.Invoke();
     }

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1fbd2a0e2a7ef41aa3181d812c5c78, type: 3}
   m_Name: Turn Manager
   m_EditorClassIdentifier: 
-  turnTime: 1
+  _enemyTurnTime: 0.5
+  _playerTurnTime: 0.5
