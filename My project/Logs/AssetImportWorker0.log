@@ -233,3 +233,156 @@ Received Import Request.
 Start importing Assets/Scripts/Script.asmdef using Guid(fdbbcc4230932774a9819204265dcb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380992d3d9b308ee6c7f01dbe4952c87') in 0.006442 seconds 
   Import took 0.012003 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 78.553044 seconds.
+  path: Assets/Scenes/ae.unity
+  artifactKey: Guid(24927824d1277b14887075816b4629b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ae.unity using Guid(24927824d1277b14887075816b4629b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bea1eefbb3a4c4313d7e0dd446a022') in 0.002299 seconds 
+  Import took 0.007248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.651132 seconds.
+  path: Assets/Scenes/Nível 1.unity
+  artifactKey: Guid(24927824d1277b14887075816b4629b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nível 1.unity using Guid(24927824d1277b14887075816b4629b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3690383b18536e895c48b10d059fb33') in 0.005672 seconds 
+  Import took 0.011509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.995525 seconds.
+  path: Assets/Scenes/Floresta
+  artifactKey: Guid(b3f62df1031b1c94cb99ac864669feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta using Guid(b3f62df1031b1c94cb99ac864669feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a454bbf946c4cdb14a11e115f0b30a21') in 0.005601 seconds 
+  Import took 0.010639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.153935 seconds.
+  path: Assets/Scenes/Floresta/TTRL 1-3
+  artifactKey: Guid(7c1d2322d27dc7c458fea6b2acefcac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/TTRL 1-3 using Guid(7c1d2322d27dc7c458fea6b2acefcac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5489815c93b5adcb1f18e84b106e5fd1') in 0.006731 seconds 
+  Import took 0.011817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.198611 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7
+  artifactKey: Guid(40b0404e16557034b907c059fa7cfed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7 using Guid(40b0404e16557034b907c059fa7cfed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0721ba167b84de4777acdefd03605a97') in 0.005052 seconds 
+  Import took 0.010977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.755848 seconds.
+  path: Assets/Scenes/Floresta/FNLZC 8-10
+  artifactKey: Guid(aee0f7aa3a6196149b7eeacf2d36c539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/FNLZC 8-10 using Guid(aee0f7aa3a6196149b7eeacf2d36c539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b86171cb4d6a5435b3b99b14c5600f9') in 0.005298 seconds 
+  Import took 0.010863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.235126 seconds.
+  path: Assets/Scenes/Floresta/TTRL 1-3/Nível 2.unity
+  artifactKey: Guid(3509ad51c271ad1489e5df8a1742967b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/TTRL 1-3/Nível 2.unity using Guid(3509ad51c271ad1489e5df8a1742967b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610228cbf58e777f5ef8f93010f70dc6') in 0.005905 seconds 
+  Import took 0.012055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.278233 seconds.
+  path: Assets/Scenes/Floresta/TTRL 1-3/Nível 3
+  artifactKey: Guid(cdb8f40b25a6a7a42b07c369356342ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/TTRL 1-3/Nível 3 using Guid(cdb8f40b25a6a7a42b07c369356342ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbead5c99de62de61b6f8ed6be6adb7d') in 0.005260 seconds 
+  Import took 0.011021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.128801 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 4
+  artifactKey: Guid(c5e357881134b4f4297c696dad1b4468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 4 using Guid(c5e357881134b4f4297c696dad1b4468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7de4df53045b5b917a6a27b3d03759') in 0.005263 seconds 
+  Import took 0.011121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.772130 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 5
+  artifactKey: Guid(49423f9042c92b14fbcc493446146f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 5 using Guid(49423f9042c92b14fbcc493446146f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d87f8e6ee15bf2744b81da0bebabf9') in 0.004973 seconds 
+  Import took 0.010918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.685374 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 7
+  artifactKey: Guid(a88d8bac013e7394fb6bac929510208b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 7 using Guid(a88d8bac013e7394fb6bac929510208b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13570352fc83ed982c9a906faef0e01e') in 0.006071 seconds 
+  Import took 0.013036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.629971 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 6
+  artifactKey: Guid(fb39067f785c68843951ecd5dbe29a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 6 using Guid(fb39067f785c68843951ecd5dbe29a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3b9a17ef9febe86089bab55d58e06f') in 0.006643 seconds 
+  Import took 0.012243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.021023 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 4.unity
+  artifactKey: Guid(c940d1df1b04c764982b0cdec2b675e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 4.unity using Guid(c940d1df1b04c764982b0cdec2b675e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376218be3343599c85e384cfd2d324ee') in 0.006085 seconds 
+  Import took 0.011688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.781364 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 5.unity
+  artifactKey: Guid(97c650450b7717b4abf96449be1aa57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 5.unity using Guid(97c650450b7717b4abf96449be1aa57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d39b874129a28b4b36ca5ac3f8b37f') in 0.006362 seconds 
+  Import took 0.011366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.654796 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 6.unity
+  artifactKey: Guid(b04bf655d55338d428519277fcfb7cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 6.unity using Guid(b04bf655d55338d428519277fcfb7cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f37b154d4bbba4f3da4ad212bd065cb') in 0.006475 seconds 
+  Import took 0.011746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.632744 seconds.
+  path: Assets/Scenes/Floresta/DSVVMT 4-7/Nível 7.unity
+  artifactKey: Guid(66a7d057c28a4604c8b5b6469dd6f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/DSVVMT 4-7/Nível 7.unity using Guid(66a7d057c28a4604c8b5b6469dd6f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6681ec424da26a192e8bff0b4fce52') in 0.005656 seconds 
+  Import took 0.010788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.247270 seconds.
+  path: Assets/Scenes/Floresta/FNLZC 8-10/Nível 8.unity
+  artifactKey: Guid(cdf836c68405d404f82946acebced7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/FNLZC 8-10/Nível 8.unity using Guid(cdf836c68405d404f82946acebced7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14676632726eb2d2a5865b9d3fa1f4bd') in 0.007592 seconds 
+  Import took 0.012684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.576411 seconds.
+  path: Assets/Scenes/Floresta/FNLZC 8-10/Nível 9.unity
+  artifactKey: Guid(becb2ed186b8a9140a2c32227b38daa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/FNLZC 8-10/Nível 9.unity using Guid(becb2ed186b8a9140a2c32227b38daa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5b15e85f5c94d9aeac442a21265a26') in 0.005694 seconds 
+  Import took 0.011273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.731390 seconds.
+  path: Assets/Scenes/Floresta/FNLZC 8-10/Nível 10.unity
+  artifactKey: Guid(31b71833b129c77459c6eb575588313c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Floresta/FNLZC 8-10/Nível 10.unity using Guid(31b71833b129c77459c6eb575588313c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd51885d89d87ac1f366137dc388abc') in 0.006246 seconds 
+  Import took 0.012100 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
