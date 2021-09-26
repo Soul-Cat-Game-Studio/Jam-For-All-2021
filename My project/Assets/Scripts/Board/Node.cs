@@ -40,6 +40,16 @@ public class Node : MonoBehaviour
         }
     }
 
+    public void EnableDiretion(int direction)
+    {
+        nodeDirections[direction].IsEnable = true;
+    }
+
+    public void DisableDiretion(int direction)
+    {
+        nodeDirections[direction].IsEnable = false;
+    }
+
     public void ExitPiece(Piece piece, PieceType pieceType)
     {
         switch (pieceType)
