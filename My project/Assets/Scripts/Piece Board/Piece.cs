@@ -46,7 +46,7 @@ public class Piece : MonoBehaviour
     {
         _currentDirection = _startDirection;
         _currentNode = _startNode;
-        _currentNode.EnterPiece(this, pieceType);
+        _currentNode?.EnterPiece(this, pieceType);
 
         _moveTween = transform.DOMove(_currentNode.transform.position, _startPlaceSpeed);
         RotateBody(_currentDirection);
@@ -106,6 +106,8 @@ public class Piece : MonoBehaviour
     protected Node NextNodeDirection(Direction direction)
     {
         Node nextNode = null;
+
+        if (_currentNode.nodeDirections == null) return;
 
         foreach (var item in _currentNode.nodeDirections)
         {
