@@ -13,6 +13,8 @@ public class TurnManager : ScriptableObject
     public event UnityAction PlayerTurnEvent = delegate { };
     public event UnityAction EnemyTurnEvent = delegate { };
 
+    public void StartGame() => PlayerTurnEvent.Invoke();
+
     public async void NextTurn()
     {
         await UniTask.Delay(TimeSpan.FromSeconds(_enemyTurnTime), ignoreTimeScale: false);

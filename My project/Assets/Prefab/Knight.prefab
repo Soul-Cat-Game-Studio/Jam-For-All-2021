@@ -98,7 +98,7 @@ MonoBehaviour:
   _turnManager: {fileID: 11400000, guid: bbd9bef1fa6dd874ea67f3c284d47ef6, type: 2}
   _startNode: {fileID: 0}
   _startDirection: 0
-  _startPlaceSpeed: 1
+  _startPlaceSpeed: 3
   walkSpeed: 1
   turnSpeed: 1
   pieceType: 1

@@ -13,21 +13,21 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
 
     // --------------INPUTS --------------
 
-    private GameControl _gameControl;
+    public GameControl gameControl;
     private InputActionMap _previouInputMap;
     private InputActionMap _currentInputMap;
 
+
     private void OnEnable()
     {
-        if (_gameControl == null)
+        if (gameControl == null)
         {
-            _gameControl = new GameControl();
-
-            _gameControl.InGame.SetCallbacks(this);
+            gameControl = new GameControl();
+            gameControl.InGame.SetCallbacks(this);
         }
 
         DisableAllInput();
-        SetCurrentMap(_gameControl.InGame);
+        SetCurrentMap(gameControl.InGame);        
     }
 
     private void OnDisable()
@@ -45,14 +45,14 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
     private void SetPreviousMap(InputActionMap inputMap)
     {
         _previouInputMap = inputMap;
-        _previouInputMap.Disable();
+        _previouInputMap?.Disable();
     }
 
     public void EnableLastInput() => SetCurrentMap(_previouInputMap);
 
     public void DisableAllInput()
     {
-        _gameControl.InGame.Disable();
+        gameControl?.InGame.Disable();
     }
 
     public void OnMovement(InputAction.CallbackContext context)
