@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SceneOperationManager
   m_EditorClassIdentifier: 
   startIndex: 0
-  index: 0
+  index: 1
   Operations:
   - unloadScenes: []
     loadScenes:
@@ -38,4 +38,46 @@ MonoBehaviour:
     - scene:
         name: "N\xEDvel 3"
         path: "Assets/Scenes/Floresta/TTRL 1-3/N\xEDvel 3.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 4"
+        path: "Assets/Scenes/Floresta/DSVVMT 4-7/N\xEDvel 4.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 5"
+        path: "Assets/Scenes/Floresta/DSVVMT 4-7/N\xEDvel 5.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 6"
+        path: "Assets/Scenes/Floresta/DSVVMT 4-7/N\xEDvel 6.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 7"
+        path: "Assets/Scenes/Floresta/DSVVMT 4-7/N\xEDvel 7.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 8"
+        path: "Assets/Scenes/Floresta/FNLZC 8-10/N\xEDvel 8.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 9"
+        path: "Assets/Scenes/Floresta/FNLZC 8-10/N\xEDvel 9.unity"
+      sceneLoadType: 0
+  - unloadScenes: []
+    loadScenes:
+    - scene:
+        name: "N\xEDvel 10"
+        path: "Assets/Scenes/Floresta/FNLZC 8-10/N\xEDvel 10.unity"
       sceneLoadType: 0
