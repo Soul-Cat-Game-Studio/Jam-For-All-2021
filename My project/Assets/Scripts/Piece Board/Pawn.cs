@@ -6,7 +6,7 @@ public class Pawn : Piece
 {
     [Space(20)]
     [SerializeField] private InputReader _input;
-    [SerializeField] private bool _canMove;
+    private bool _canMove;
 
     protected override void OnDisable()
     {
@@ -18,7 +18,6 @@ public class Pawn : Piece
     {
         base.Start();
         _turnManager.StartGame();
-        _canMove = true;
     }
 
     public override void StartPlayerTurn()
@@ -35,7 +34,9 @@ public class Pawn : Piece
 
     protected override bool Move(Direction direction)
     {
-        if (!base.Move(direction)) return false;        
+        if (!base.Move(direction)) return false;
+
+        _canMove = false;
 
         _input.MoveEvent -= HandlerMovement;
         _turnManager.NextTurn();
@@ -56,6 +57,8 @@ public class Pawn : Piece
 
     public void HandlerMovement(Vector2 pos)
     {
+        if (!_canMove) return;
+
         if (pos.x == 1) Move(Direction.Rigth);
         else if (pos.x == -1) Move(Direction.Left);
         else if (pos.y == 1) Move(Direction.Foward);
