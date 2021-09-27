@@ -6,12 +6,7 @@ public class Pawn : Piece
 {
     [Space(20)]
     [SerializeField] private InputReader _input;
-
-    protected override void OnEnable()
-    {
-        base.OnEnable();
-        _input.MoveEvent += HandlerMovement;
-    }
+    [SerializeField] private bool _canMove;
 
     protected override void OnDisable()
     {
@@ -19,9 +14,17 @@ public class Pawn : Piece
         _input.MoveEvent -= HandlerMovement;
     }
 
+    protected override void Start()
+    {
+        base.Start();
+        _turnManager.StartGame();
+        _canMove = true;
+    }
+
     public override void StartPlayerTurn()
     {
         _input.MoveEvent += HandlerMovement;
+        _canMove = true;
     }
 
     public override void Died()
@@ -32,7 +35,7 @@ public class Pawn : Piece
 
     protected override bool Move(Direction direction)
     {
-        if (!base.Move(direction)) return false;
+        if (!base.Move(direction)) return false;        
 
         _input.MoveEvent -= HandlerMovement;
         _turnManager.NextTurn();

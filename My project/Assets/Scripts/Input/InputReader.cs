@@ -27,7 +27,7 @@ public class InputReader : ScriptableObject, GameControl.IInGameActions
         }
 
         DisableAllInput();
-        SetCurrentMap(gameControl.InGame);
+        SetCurrentMap(gameControl.InGame);        
     }
 
     private void OnDisable()

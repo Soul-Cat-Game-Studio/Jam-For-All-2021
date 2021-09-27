@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SceneOperationManager
   m_EditorClassIdentifier: 
   startIndex: 0
-  index: 0
+  index: 1
   Operations:
   - unloadScenes: []
     loadScenes:
