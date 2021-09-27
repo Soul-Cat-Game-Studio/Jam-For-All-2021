@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{3bde7c23-5820-4cf6-9f01-d7a3e4d22d60}">
+		<property name="assetPath">
+			<value>tomando peça.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.83052154195011341</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{604f5e3c-505b-4e70-82c4-c74613885b1a}</destination>
+		</relationship>
+	</object>
+</objects>
