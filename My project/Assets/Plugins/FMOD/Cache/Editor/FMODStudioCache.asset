@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 4884907422655576191}
   StringsBanks:
   - {fileID: 8657203189584569262}
-  stringsBankWriteTime: 637682901703792583
+  stringsBankWriteTime: 637682923997235942
   cacheVersion: 8
 --- !u!114 &313767845425282668
 MonoBehaviour:
@@ -244,7 +244,7 @@ MonoBehaviour:
   Path: Assets/Fmod/OST game/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637682901703772584
+  lastModified: 637682923997216185
   FileSizes:
   - Name: Desktop
     Value: 4066976
@@ -264,7 +264,7 @@ MonoBehaviour:
   Path: Assets/Fmod/OST game/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637682901703792583
+  lastModified: 637682923997235942
   FileSizes:
   - Name: Desktop
     Value: 1144
